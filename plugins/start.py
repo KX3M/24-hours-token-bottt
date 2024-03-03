@@ -61,7 +61,7 @@ async def start_command(client: Client, message: Message):
             await update_verify_status(id, is_verified=True, verified_time=time.time())
             if verify_status["link"] == "":
                 reply_markup = None
-            await message.reply(f"â Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=True, quote=True)
+            await message.reply(f"Your token successfully verified and valid for: 24 Hour", reply_markup=reply_markup, protect_content=True, quote=True)
 
         elif len(message.text) > 7 and verify_status['is_verified']:
             try:
@@ -121,8 +121,8 @@ async def start_command(client: Client, message: Message):
 
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
-                [[InlineKeyboardButton("ð About Me", callback_data="about"),
-                  InlineKeyboardButton("ð Close", callback_data="close")]]
+                [[InlineKeyboardButton("🤖 About Me", callback_data="about"),
+                  InlineKeyboardButton("🔒 Close", callback_data="close")]]
             )
             await message.reply_text(
                 text=START_MSG.format(
