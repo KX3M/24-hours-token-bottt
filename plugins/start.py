@@ -121,16 +121,9 @@ async def start_command(client: Client, message: Message):
 
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
-            [          
-                [
-                    InlineKeyboardButton("⚡ MAIN CHANNEL ⚡", url = "https://t.me/+Nz4u9JnJ5VMxMmU9")
-                ],
-                [
-                    InlineKeyboardButton("🤖 About Me", callback_data = "about"),
-                    InlineKeyboardButton("🔒 Close", callback_data = "close")
-                ]
-            ]
-        )
+                [[InlineKeyboardButton("🤖 About Me", callback_data="about"),
+                  InlineKeyboardButton("🔒 Close", callback_data="close")]]
+            )
             await message.reply_text(
                 text=START_MSG.format(
                     first=message.from_user.first_name,
