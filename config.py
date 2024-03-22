@@ -65,7 +65,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" el
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
+USER_REPLY_TEXT = "JOIN MY BACK-UP CHANNEL 👉 @BRAZZERSVIDE0 FOR MORE UPDATE !!"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6763245675)
