@@ -121,8 +121,8 @@ async def start_command(client: Client, message: Message):
 
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
-                [[InlineKeyboardButton("📣 MAIN CHANNEL 📣", url="https://t.me/BRAZZERSVIDE0")],
-                 [InlineKeyboardButton("🤖 About Me", callback_data="about"),
+                [
+                 [ InlineKeyboardButton("🤖 About Me", callback_data="about"),
                   InlineKeyboardButton("🔒 Close", callback_data="close")]]
             )
             await message.reply_text(
@@ -142,7 +142,7 @@ async def start_command(client: Client, message: Message):
             verify_status = await get_verify_status(id)
             if IS_VERIFY and not verify_status['is_verified']:
                 short_url = f"api.publicearn.com"
-                full_tut_url = f"https://t.me/BJPtutorials/6"
+                full_tut_url = f"https://t.me/sotutorials/6"
                 token = ''.join(random.choices(string.ascii_letters + string.digits, k=10))
                 await update_verify_status(id, verify_token=token, link="")
                 link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API,f'https://telegram.dog/{client.username}?start=verify_{token}')
@@ -169,7 +169,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
     
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
-    buttons = [
+    buttons = [ 
         [
             InlineKeyboardButton(
                 "Join Channel",
@@ -180,7 +180,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = '♻️ Try Again ♻️',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
