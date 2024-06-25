@@ -37,6 +37,23 @@ VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86400)) # Add time in second
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","sotutorials")
 
+UPI_ID = os.environ.get("UPI_ID", "wolf@psb")
+#UPI QR CODE IMAGE
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://graph.org/file/a95389977b7ca92016eb4.jpg")
+#SCREENSHOT URL of ADMIN for verification of payments
+SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", "t.me/lnkaChipsbot")
+#Time and its price
+#7 Days
+PRICE1 = os.environ.get("PRICE1", "40 rs")
+#1 Month
+PRICE2 = os.environ.get("PRICE2", "140 rs")
+#3 Month
+PRICE3 = os.environ.get("PRICE3", "400 rs")
+#6 Month
+PRICE4 = os.environ.get("PRICE4", "750 rs")
+#1 Year
+PRICE5 = os.environ.get("PRICE5", "1200 rs")
+
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", ""))
