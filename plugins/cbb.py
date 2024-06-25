@@ -27,7 +27,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
     elif data == "buy_prem":
         await query.message.edit_text(
-            text=f"👋 Hello {mention}\n\n🎖️ Available Plans :\n\n● ₹{PRICE1} For 7 Days Prime Membership\n\n● ₹{PRICE2} For 1 Month Prime Membership\n\n● ₹{PRICE3} For 3 Months Prime Membership\n\n● ₹{PRICE4} For 6 Months Prime Membership\n\n● ₹{PRICE5} For 1 Year Prime Membership\n\n\n🔖 If you want to purchase Prime membership then please Contact Bot owner\n\nOwner & Admin accounts are mentioned below \n ⬇️⬇️👇👇⬇️⬇️",
+            text=f"👋 Hello  {query.from_user.username}\n\n🎖️ Available Plans :\n\n● ₹{PRICE1} For 7 Days Prime Membership\n\n● ₹{PRICE2} For 1 Month Prime Membership\n\n● ₹{PRICE3} For 3 Months Prime Membership\n\n● ₹{PRICE4} For 6 Months Prime Membership\n\n● ₹{PRICE5} For 1 Year Prime Membership\n\n\n🔖 If you want to purchase Prime membership then please Contact Bot owner\n\nOwner & Admin accounts are mentioned below \n ⬇️⬇️👇👇⬇️⬇️",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [   
