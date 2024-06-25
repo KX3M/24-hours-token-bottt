@@ -17,7 +17,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
             reply_markup = InlineKeyboardMarkup(
                 [ [ InlineKeyboardButton(" Source code ", url="https://t.me/+NeqCUg-QDxo2Nzll"),
                   InlineKeyboardButton("Bot Channel" , url= "https://t.me/publicfille")],
-                 [InlineKeyboardButton("Remove All Ads In One Click", url= "https://t.me/lnkachips/20")],
+                 [InlineKeyboardButton("Remove All Ads In One Click", callback_data = "buy_prem")],
                     [
                         InlineKeyboardButton("🔒 Close", callback_data = "close")
                     ]
@@ -27,12 +27,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
     elif data == "buy_prem":
         await query.message.edit_text(
-            text=f"👋 Hello  {query.from_user.username}\n\n🎖️ Available Plans :\n\n● ₹{PRICE1} For 7 Days Prime Membership\n\n● ₹{PRICE2} For 1 Month Prime Membership\n\n● ₹{PRICE3} For 3 Months Prime Membership\n\n● ₹{PRICE4} For 6 Months Prime Membership\n\n● ₹{PRICE5} For 1 Year Prime Membership\n\n\n🔖 If you want to purchase Prime membership then please Contact Bot owner\n\nOwner & Admin accounts are mentioned below \n ⬇️⬇️👇👇⬇️⬇️",
+            text=f"👋 Hello  {query.from_user.username}\n\n🎖️ Available Plans :\n\n● ₹{PRICE1}Rs For 7 Days Prime Membership\n\n● ₹{PRICE2}Rs For 1 Month Prime Membership\n\n● ₹{PRICE3}Rs For 3 Months Prime Membership\n\n● ₹{PRICE4}Rs For 6 Months Prime Membership\n\n● ₹{PRICE5}Rs For 1 Year Prime Membership\n\n\n🔖 If you want to purchase Prime membership then please Contact Bot Owner & Admin\n\nOwner & Admin accounts \nare mentioned below \n\n     ↘️⬇️⬇️👇🪪👇⬇️⬇️↙️",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [   
                     [
-                        InlineKeyboardButton("Bot Owner", url="t.me/inkax"),
+                        InlineKeyboardButton("Bot Owner", url="t.me/lnkaChipsbot"),
                         InlineKeyboardButton("Bot Admin",url=(SCREENSHOT_URL))
                     ],
                     [
