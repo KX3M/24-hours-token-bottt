@@ -44,15 +44,15 @@ UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://graph.org/file/a9538997
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", "t.me/lnkaChipsbot")
 #Time and its price
 #7 Days
-PRICE1 = os.environ.get("PRICE1", "40 rs")
+PRICE1 = os.environ.get("PRICE1", "40")
 #1 Month
-PRICE2 = os.environ.get("PRICE2", "140 rs")
+PRICE2 = os.environ.get("PRICE2", "140")
 #3 Month
-PRICE3 = os.environ.get("PRICE3", "400 rs")
+PRICE3 = os.environ.get("PRICE3", "400")
 #6 Month
-PRICE4 = os.environ.get("PRICE4", "750 rs")
+PRICE4 = os.environ.get("PRICE4", "750")
 #1 Year
-PRICE5 = os.environ.get("PRICE5", "1200 rs")
+PRICE5 = os.environ.get("PRICE5", "1200")
 
 
 #force sub channel id, if you want enable force sub
