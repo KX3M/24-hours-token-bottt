@@ -27,12 +27,12 @@ async def cb_handler(client: Bot, query: CallbackQuery):
 
     elif data == "buy_prem":
         await query.message.edit_text(
-            text=f"👋 Hello  {query.from_user.username}\n\n🎖️ Available Plans :\n\n● ₹{PRICE1}Rs For 7 Days Prime Membership\n\n● ₹{PRICE2}Rs For 1 Month Prime Membership\n\n● ₹{PRICE3}Rs For 3 Months Prime Membership\n\n● ₹{PRICE4}Rs For 6 Months Prime Membership\n\n● ₹{PRICE5}Rs For 1 Year Prime Membership\n\n\n🔖 If you want to purchase Prime membership then please Contact Bot Owner & Admin\n\nOwner & Admin accounts \nare mentioned below \n\n     ↘️⬇️⬇️👇🪪👇⬇️⬇️↙️",
+            text=f"👋 Hello  {query.from_user.username}\n\n🎖️ Available Plans :\n\n● ₹{PRICE1}Rs For 7 Days Prime Membership\n\n● ₹{PRICE2}Rs For 1 Month Prime Membership\n\n● ₹{PRICE3}Rs For 3 Months Prime Membership\n\n● ₹{PRICE4}Rs For 6 Months Prime Membership\n\n● ₹{PRICE5}Rs For 1 Year Prime Membership\n\n\n🔖 If you want to purchase Prime membership then please Contact Bot Owner & Admin\n\nOwner & Admin accounts are mentioned below",
             disable_web_page_preview=True,
             reply_markup = InlineKeyboardMarkup(
                 [   
                     [
-                        InlineKeyboardButton("Bot Owner", url="t.me/lnkaChipsbot"),
+                        InlineKeyboardButton("Bot Owner", url="t.me/inkax"),
                         InlineKeyboardButton("Bot Admin",url=(SCREENSHOT_URL))
                     ],
                     [
