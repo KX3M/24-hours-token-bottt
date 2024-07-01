@@ -54,7 +54,6 @@ PRICE4 = os.environ.get("PRICE4", "750")
 #1 Year
 PRICE5 = os.environ.get("PRICE5", "1200")
 
-SECONDS = int(os.getenv("SECONDS", "600")) # auto delete in seconds
 
 
 #force sub channel id, if you want enable force sub
