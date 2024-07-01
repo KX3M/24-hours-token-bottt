@@ -12,7 +12,6 @@ from pyrogram import Client, filters, __version__
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
-
 from bot import Bot
 from config import (
     ADMINS,
@@ -28,8 +27,6 @@ from config import (
     TUT_VID,
     OWNER_ID,
 )
-from pyrogram.errors import FloodWait, UserIsBlocked, InputUserDeactivated
-from bot import Bot
 from helper_func import subscribed, encode, decode, get_messages, get_shortlink, get_verify_status, update_verify_status, get_exp_time
 from database.database import add_user, del_user, full_userbase, present_user
 from shortzy import Shortzy
