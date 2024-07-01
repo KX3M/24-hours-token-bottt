@@ -31,8 +31,6 @@ from helper_func import subscribed, encode, decode, get_messages, get_shortlink,
 from database.database import add_user, del_user, full_userbase, present_user
 from shortzy import Shortzy
 
-SECONDS = int(os.getenv("SECONDS", "600"))
-
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -120,14 +118,7 @@ async def start_command(client: Client, message: Message):
                     await msg.copy(chat_id=message.from_user.id, caption=caption, parse_mode=ParseMode.HTML, reply_markup=reply_markup, protect_content=PROTECT_CONTENT)
                 except:
                     pass
-                except:
-                    pass
-        k = await client.send_message(chat_id = message.from_user.id, text=f"<b>❗️ <u>IMPORTANT</u> ❗️</b>\n\nThis video / file will be deleted in 10 minutes (Due to copyright issues).\n\n📌 Please forward this video / file to somewhere else and start downloading there.")
-        await asyncio.sleep(SECONDS)
-        for f in copied_messages:
-            await f.delete()
-        await k.edit_text("Your video / file is successfully deleted !")
-
+                
         elif verify_status['is_verified']:
             reply_markup = InlineKeyboardMarkup(
             [          
